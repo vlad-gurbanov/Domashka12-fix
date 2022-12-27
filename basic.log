@@ -1,0 +1,73 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:03:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:03:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:03:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Выполнен поиск
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:01] "GET /search/?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполнен поиск
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:33] "GET /search/?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполнен поиск
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:48] "GET /search/?s=погода HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполнен поиск
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:59] "GET /search/?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:04:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:05:12] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:05:33] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:05:36] "GET /load/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:05:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /upload_post/ [POST]
+Traceback (most recent call last):
+  File "C:\Users\vlad-\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vlad-\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vlad-\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vlad-\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vlad-\PycharmProjects\Domashka12-fix\loader\view.py", line 23, in upload_post
+    picture.save(f"static/uploads/{filename}")
+  File "C:\Users\vlad-\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'static/uploads/planeta-zemlia-kosmos-1.jpg'
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 03:06:11] "[35m[1mPOST /upload_post/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 12:45:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 12:45:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполнен поиск
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 12:45:15] "GET /search/?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Dec/2022 12:45:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
